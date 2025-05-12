@@ -5,7 +5,7 @@ import { defineConfig } from 'sanity'
 import { projectId, dataset, apiVersion } from '@/sanity/lib/env'
 import { structure } from './src/sanity/structure'
 import { presentation } from './src/sanity/presentation'
-import { icon, infoWidget } from 'sanitypress-utils'
+import { infoWidget } from 'sanitypress-utils'
 import {
 	dashboardTool,
 	projectInfoWidget,
@@ -22,8 +22,7 @@ import resolveUrl from '@/lib/resolveUrl'
 const singletonTypes = ['site']
 
 export default defineConfig({
-	title: 'SanityPress',
-	icon,
+	title: 'PPFI Press',
 	projectId,
 	dataset,
 	basePath: '/admin',
