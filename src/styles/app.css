@@ -2,9 +2,9 @@
 @import './fonts.css';
 
 @theme {
-	--color-canvas: #fff;
-	--color-ink: #000;
-	--color-accent: #000;
+	--color-canvas: #000;
+	--color-ink: #fff;
+	--color-accent: #fff;
 
 	--max-height-fold: calc(100svh - var(--header-height));
 }
@@ -166,7 +166,7 @@
 }
 
 @utility text-shadow {
-	text-shadow: 0 0 0.2em rgb(0 0 0 / 0.25);
+	text-shadow: 0 0 0.2em rgb(255 255 255 / 0.25);
 }
 
 @utility text-gradient {
@@ -186,7 +186,7 @@
 }
 
 @utility action {
-	@apply action-base bg-accent rounded border border-transparent text-balance text-white;
+	@apply action-base bg-accent rounded border border-transparent text-balance text-black;
 }
 
 @utility action-outline {
@@ -236,8 +236,8 @@
 	mask: linear-gradient(
 		to right,
 		transparent,
-		black var(--offset),
-		black calc(100% - var(--offset)),
+		white var(--offset),
+		white calc(100% - var(--offset)),
 		transparent
 	);
 }
@@ -246,8 +246,8 @@
 	--offset: 4rem;
 	mask: linear-gradient(
 		to right,
-		black 50%,
-		black calc(100% - var(--offset)),
+		white 50%,
+		white calc(100% - var(--offset)),
 		transparent
 	);
 }
